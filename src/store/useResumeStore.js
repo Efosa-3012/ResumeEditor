@@ -8,9 +8,11 @@ const useResumeStore = create((set) => ({
 
 	addExperience: (entry) =>
 		set((state) => ({ experience: [...state.experience, entry] })),
+	setExperience: (newList) => set({ experience: newList }),
 
 	addEducation: (entry) =>
 		set((state) => ({ education: [...state.education, entry] })),
+	setEducation: (newList) => set({ education: newList }),
 
 	updatePersonalInfo: (info) =>
 		set((state) => ({
